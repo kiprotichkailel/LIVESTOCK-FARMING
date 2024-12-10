@@ -1,18 +1,23 @@
-// Function to handle the addition of financial entries
+// Function to handle adding financial entries
 document.getElementById('financial-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Get the form input values
-    var type = document.getElementById('type').value;
-    var amount = document.getElementById('amount').value;
-    var date = document.getElementById('date').value;
-    var category = document.getElementById('category').value;
+    // Retrieve form values
+    const type = document.getElementById('type').value;
+    const amount = document.getElementById('amount').value;
+    const date = document.getElementById('date').value;
+    const category = document.getElementById('category').value;
 
-    // Create a new row in the financial table
-    var tableBody = document.getElementById('financial-table-body');
-    var newRow = document.createElement('tr');
+    // Validate inputs
+    if (!type || !amount || !date || !category) {
+        alert("All fields are required!");
+        return;
+    }
 
-    // Insert the data into the new row
+    // Add a new row to the financial tracker table
+    const tableBody = document.getElementById('financial-table-body');
+    const newRow = document.createElement('tr');
+
     newRow.innerHTML = `
         <td>${type}</td>
         <td>${amount}</td>
@@ -21,15 +26,14 @@ document.getElementById('financial-form').addEventListener('submit', function(ev
         <td><button onclick="deleteEntry(this)">Delete</button></td>
     `;
 
-    // Append the new row to the table body
     tableBody.appendChild(newRow);
 
-    // Reset the form
+    // Reset form inputs
     document.getElementById('financial-form').reset();
 });
 
-// Function to delete a financial entry
+// Function to delete a table entry
 function deleteEntry(button) {
-    var row = button.parentNode.parentNode;
+    const row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
