@@ -6,47 +6,45 @@
     <title>KAILEL Livestock Farming Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>background color="light blue"</background color>
+<body>
     <header>
-        <h1>Expert Livestock Farming Project</h1>
+        <h1>KAILEL Livestock Farming Project</h1>
         <p>Manage your farm, track expenses and incomes, and increase profitability with expert-level strategies.</p><br>
     </header>
 
-    <section id="mission-vision">
-        <h2>Mission & Vision</h2>
-        <p><strong>Mission:</strong> To provide high-quality, sustainable livestock farming practices that enhance the profitability and well-being of farmers, ensuring animal health and fostering long-term growth.</p><br>
-        <p><strong>Vision:</strong> To become a leading provider of livestock products (milk, meat, wool) through innovative and sustainable farming practices, enriching lives and contributing to community food security.</p><br>
-    </section>
-
-    <section id="objectives">
-        <h2>Project Objectives</h2>
-        <ul>
-            <li>1. Establish a high-quality livestock breeding program for cattle, goats, pigs, and sheep.</li>
-            <li>2. Implement sustainable and cost-effective feeding practices to reduce operational costs.</li>
-            <li>3. Develop a robust health management plan that ensures regular veterinary care and disease prevention.</li>
-            <li>4. Expand the farm’s production capacity by increasing the herd size and diversifying livestock breeds.</li>
-            <li>5. Achieve a steady market demand for livestock products by building partnerships with local buyers and suppliers.</li>
-        </ul>
-    </section>
-
-    <!-- Financial Tracker Section -->
     <section id="financials">
         <h2>Financial Tracker: Expenses and Income</h2>
+        <!-- Financial Tracker Table -->
         <table id="financial-table">
             <thead>
                 <tr>
-                    <th>Type</th>
-                    <th>Amount (Ksh)</th>
-                    <th>Date</th>
-                    <th>Category</th>
-                    <th>Actions</th>
+                    <th>Type</th><br>
+                    <th>Amount (Ksh)</th><br>
+                    <th>Date</th><br>
+                    <th>Category</th><br>
+                    <th>Actions</th><br>
                 </tr>
             </thead>
             <tbody id="financial-table-body">
                 <!-- Financial entries will appear here -->
+                <tr>
+                    <td>Expense</td>
+                    <td>5000</td>
+                    <td>2024-12-01</td>
+                    <td>Feed</td>
+                    <td><button onclick="deleteEntry(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td>15000</td>
+                    <td>2024-12-05</td>
+                    <td>Sales</td>
+                    <td><button onclick="deleteEntry(this)">Delete</button></td><br>
+                </tr>
             </tbody>
         </table>
 
+        <!-- Add New Entry Form -->
         <h3>Add New Entry</h3>
         <form id="financial-form">
             <table>
@@ -73,22 +71,22 @@
         </form>
     </section>
 
-    <!-- Detailed Livestock Financials Section -->
+    <!-- Detailed Livestock Financials Table -->
     <section id="detailed-financials">
         <h2>Detailed Livestock Financials</h2>
         <table id="detailed-financials-table">
             <thead>
                 <tr>
-                    <th>ID</th><br>
-                    <th>Type</th><br>
-                    <th>Amount (Ksh)<<br>/th>
-                    <th>Date</th><br>
-                    <th>Category</th><br>
-                    <th>Livestock Type</t<br>h>
-                    <th>Feed Costs</th><br>
-                    <th>Labor Costs</th><br>
-                    <th>Veterinary Costs</th<br>>
-                    <th>Revenue</th><br>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Amount (Ksh)</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Livestock Type</th>
+                    <th>Feed Costs</th>
+                    <th>Labor Costs</th>
+                    <th>Veterinary Costs</th>
+                    <th>Revenue</th>
                 </tr>
             </thead>
             <tbody>
@@ -104,32 +102,43 @@
                     <td>500</td>
                     <td>0</td>
                 </tr>
-                <!-- Add other rows as necessary -->
+                <tr>
+                    <td>2</td>
+                    <td>Income</td>
+                    <td>12000</td>
+                    <td>2024-12-10</td>
+                    <td>Milk Sales</td>
+                    <td>Cattle</td>
+                    <td>1500</td>
+                    <td>2000</td>
+                    <td>1000</td>
+                    <td>15000</td>
+                </tr>
             </tbody>
         </table>
     </section>
 
-    <!-- Additional Livestock Financial Tracker Section -->
+    <!-- Additional Livestock Financial Tracker -->
     <section id="additional-financials">
-        <h2>Additional Livestock Financial Tracker</h2>
+        <h2>Additional Livestock Financial Tracker</h2><br>
         <table id="additional-financials-table">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Revenue Source</th><br>
-                    <th>Feed Cost (Ksh)</th><br>
-                    <th>Labor Cost (Ksh)</th><br>
-                    <th>Health Cost (Ksh)</th><br>
-                    <th>Breeding Cost (Ksh)</th><br>
-                    <th>Market Sales (Ksh)</th><br>
-                    <th>Transport Costs (Ksh)</th><br>
-                    <th>Storage Costs (Ksh)</th><br>
-                    <th>Net Profit (Ksh)</th><br>
+                    <th>Revenue Source</th>
+                    <th>Feed Cost (Ksh)</th>
+                    <th>Labor Cost (Ksh)</th>
+                    <th>Health Cost (Ksh)</th>
+                    <th>Breeding Cost (Ksh)</th>
+                    <th>Market Sales (Ksh)</th>
+                    <th>Transport Costs (Ksh)</th>
+                    <th>Storage Costs (Ksh)</th>
+                    <th>Net Profit (Ksh)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>2</td>
+                    <td>1</td>
                     <td>Milk Sales</td>
                     <td>2000</td>
                     <td>1000</td>
@@ -140,7 +149,18 @@
                     <td>500</td>
                     <td>11000</td>
                 </tr>
-                <!-- Add other rows as necessary -->
+                <tr>
+                    <td>2</td>
+                    <td>Meat Sales</td>
+                    <td>2500</td>
+                    <td>1500</td>
+                    <td>400</td>
+                    <td>500</td>
+                    <td>20000</td>
+                    <td>3000</td>
+                    <td>600</td>
+                    <td>13500</td>
+                </tr>
             </tbody>
         </table>
     </section>
