@@ -112,6 +112,27 @@ button:hover {
     color: white;
 }
 
+/* Detailed Financials Table */
+#detailed-financials {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    border: 2px solid #4CAF50;
+}
+
+#detailed-financials th,
+#detailed-financials td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#detailed-financials th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Form Styling */
 form {
     margin-top: 20px;
     display: flex;
