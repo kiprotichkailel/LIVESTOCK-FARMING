@@ -1,83 +1,89 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and background styling */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #333;
-    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
+    background: #4CAF50;
     color: white;
-    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
+h1, h2, h3 {
+    margin: 20px 0 10px;
 }
 
 p {
-    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
-/* Financial Table Section */
-#financials, #detailed-financials, #additional-financials {
-    margin-top: 40px;
-    text-align: center;
-}
-
+/* Table Styling */
 table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
+    margin: 20px 0;
 }
 
-th, td {
-    padding: 10px;
+table th, table td {
     border: 1px solid #ddd;
+    padding: 10px;
     text-align: left;
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
+table th {
+    background-color: #f4f4f4;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 /* Form Styling */
-form table {
-    margin: 20px auto;
-    width: 50%;
+form {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form input, form button {
-    padding: 10px;
-    font-size: 1rem;
+form label {
+    margin-right: 10px;
+}
+
+form input[type="text"], form input[type="number"], form input[type="date"] {
+    padding: 5px;
+    margin: 5px 10px 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.9rem;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
