@@ -1,15 +1,4 @@
-// Function to toggle the visibility of livestock farming details
-function showDetails(livestockType) {
-    var details = document.getElementById('details-' + livestockType);
-    // Toggle visibility
-    if (details.style.display === "block") {
-        details.style.display = "none";
-    } else {
-        details.style.display = "block";
-    }
-}
-
-// Handle form submission and add entries to the financial table
+// Function to handle the addition of financial entries
 document.getElementById('financial-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
