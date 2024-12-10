@@ -41,75 +41,49 @@ p {
 }
 
 /* Financial Table Section */
-#financials {
+#financials, #detailed-financials, #additional-financials {
     margin-top: 40px;
     text-align: center;
 }
 
-#financial-table {
+table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
 }
 
-#financial-table th,
-#financial-table td {
+th, td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-#financial-table th {
+th {
     background-color: #4CAF50;
     color: white;
 }
 
-/* Detailed Financials Table */
-#detailed-financials, #additional-financials-table {
-    width: 100%;
-    margin-top: 30px;
-    border-collapse: collapse;
-    border: 2px solid #4CAF50;
-}
-
-#detailed-financials th,
-#detailed-financials td,
-#additional-financials-table th,
-#additional-financials-table td {
+button {
+    background-color: #4CAF50;
+    color: white;
     padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-#detailed-financials th,
-#additional-financials-table th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Form Styling */
-form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-form input,
-form button {
-    padding: 10px;
-    font-size: 1rem;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
     border: none;
     cursor: pointer;
 }
 
-form button:hover {
+button:hover {
     background-color: #45a049;
+}
+
+/* Form Styling */
+form table {
+    margin: 20px auto;
+    width: 50%;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 1rem;
 }
 
 /* Footer Styling */
