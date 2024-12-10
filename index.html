@@ -3,103 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poultry Farming Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Expert Livestock Farming Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Poultry Farming Project</h1>
-        <nav>
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#market">Market Analysis</a></li>
-                <li><a href="#financial">Financial Plan</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Expert Livestock Farming Project</h1>
+        <p>Manage your farm, track expenses and incomes, and increase profitability with expert-level strategies.</p>
     </header>
 
-    <section id="overview">
-        <h2>Project Overview</h2>
-        <p>Poultry farming involves raising chickens for meat (broilers) or eggs (layers). This project is designed to produce high-quality products while ensuring sustainability and profitability. We plan to start with 100 chickens and scale up as the business grows.</p>
+    <section id="mission-vision">
+        <h2>Mission & Vision</h2>
+        <p><strong>Mission:</strong> To provide high-quality, sustainable livestock farming practices that enhance the profitability and well-being of farmers, ensuring animal health and fostering long-term growth.</p>
+        <p><strong>Vision:</strong> To become a leading provider of livestock products (milk, meat, wool) through innovative and sustainable farming practices, enriching lives and contributing to community food security.</p>
     </section>
 
-    <section id="market">
-        <h2>Market Analysis</h2>
-        <h3>Target Market</h3>
+    <section id="objectives">
+        <h2>Project Objectives</h2>
         <ul>
-            <li>Broilers (Meat): Local butcheries, supermarkets, hotels.</li>
-            <li>Layers (Eggs): Households, bakeries, restaurants.</li>
+            <li>1. Establish a high-quality livestock breeding program for cattle, goats, pigs, and sheep.</li>
+            <li>2. Implement sustainable and cost-effective feeding practices to reduce operational costs.</li>
+            <li>3. Develop a robust health management plan that ensures regular veterinary care and disease prevention.</li>
+            <li>4. Expand the farm’s production capacity by increasing the herd size and diversifying livestock breeds.</li>
+            <li>5. Achieve a steady market demand for livestock products by building partnerships with local buyers and suppliers.</li>
         </ul>
-        <h3>Market Opportunity</h3>
-        <p>The poultry farming market is growing, with high demand for both meat and eggs. By offering a consistent supply of quality products, we aim to establish a strong market presence.</p>
     </section>
 
-    <section id="financial">
-        <h2>Financial Plan</h2>
-        <h3>Initial Budget</h3>
-        <table id="budget">
-            <tr>
-                <th>Expense Item</th>
-                <th>Broilers (Ksh)</th>
-                <th>Layers (Ksh)</th>
-            </tr>
-            <tr>
-                <td>Poultry House</td>
-                <td>15,000</td>
-                <td>20,000</td>
-            </tr>
-            <tr>
-                <td>Day-Old Chicks</td>
-                <td>10,000</td>
-                <td>10,000</td>
-            </tr>
-            <tr>
-                <td>Feed (per cycle)</td>
-                <td>20,000</td>
-                <td>40,000</td>
-            </tr>
-            <tr>
-                <td>Vaccination/Health</td>
-                <td>3,000</td>
-                <td>5,000</td>
-            </tr>
-            <tr>
-                <td>Equipment</td>
-                <td>5,000</td>
-                <td>7,000</td>
-            </tr>
-            <tr>
-                <td>Miscellaneous</td>
-                <td>2,000</td>
-                <td>3,000</td>
-            </tr>
-            <tr>
-                <th>Total Cost</th>
-                <th>55,000</th>
-                <th>85,000</th>
-            </tr>
+    <section id="livestock-types">
+        <h2>Types of Livestock Farming</h2>
+        <div class="card" id="cattle-farming">
+            <h3>Cattle Farming</h3>
+            <p>Raising cows for milk and beef.</p>
+            <button onclick="showDetails('cattle')">Learn More</button>
+            <div class="details" id="details-cattle">
+                <p>Space: 1-2 acres per cow</p>
+                <p>Feeding: Pasture and grains</p>
+                <p>Revenue: Milk and beef production</p>
+            </div>
+        </div>
+
+        <div class="card" id="goat-farming">
+            <h3>Goat Farming</h3>
+            <p>Goats for meat, milk, and fiber.</p>
+            <button onclick="showDetails('goat')">Learn More</button>
+            <div class="details" id="details-goat">
+                <p>Space: 0.5 to 1 acre for 10 goats</p>
+                <p>Feeding: Hay and supplemental grains</p>
+                <p>Revenue: Meat, milk, and fiber</p>
+            </div>
+        </div>
+
+        <div class="card" id="pig-farming">
+            <h3>Pig Farming</h3>
+            <p>Pigs raised for meat production (pork).</p>
+            <button onclick="showDetails('pig')">Learn More</button>
+            <div class="details" id="details-pig">
+                <p>Space: 100-150 sq. feet per pig</p>
+                <p>Feeding: Grains and vegetable scraps</p>
+                <p>Revenue: Pork production and piglets</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="financials">
+        <h2>Financial Tracker: Expenses and Income</h2>
+        
+        <!-- Expenses and Income Table -->
+        <table id="financial-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount (Ksh)</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="financial-table-body">
+                <!-- Financial entries will appear here -->
+            </tbody>
         </table>
-        <h3>Revenue Projections</h3>
-        <p>For broilers, selling 100 birds at Ksh 400–500 each will generate Ksh 40,000–50,000 per cycle. For layers, with 100 hens producing 250–300 eggs each per year, revenue will range from Ksh 375,000–450,000 annually.</p>
-    </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Submit</button>
+        <h3>Add New Entry</h3>
+        <form id="financial-form">
+            <label for="type">Type (Expense/Income):</label>
+            <input type="text" id="type" required>
+
+            <label for="amount">Amount (Ksh):</label>
+            <input type="number" id="amount" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="category">Category (e.g., Feed, Health, Sales):</label>
+            <input type="text" id="category" required>
+
+            <button type="submit">Add Entry</button>
         </form>
-        <div id="responseMessage"></div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Poultry Farming Project | All Rights Reserved</p>
+        <p>&copy; 2024 Expert Livestock Farming Project</p>
     </footer>
 
     <script src="script.js"></script>
