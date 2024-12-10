@@ -29,17 +29,6 @@ p {
     font-size: 1.2rem;
 }
 
-/* Mission and Vision Section */
-#mission-vision {
-    margin-top: 30px;
-    text-align: center;
-}
-
-#mission-vision h2 {
-    font-size: 2rem;
-    color: #4CAF50;
-}
-
 /* Financial Table Section */
 #financials, #detailed-financials, #additional-financials {
     margin-top: 40px;
