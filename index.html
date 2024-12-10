@@ -7,68 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+       < background color="ligth blue";>/p>
     <header>
-        <h1>Expert Livestock Farming Project</h1>
+        <h1>Expert Livestock Farming Project</h1><br>
         <p>Manage your farm, track expenses and incomes, and increase profitability with expert-level strategies.</p>
     </header>
 
     <section id="mission-vision">
         <h2>Mission & Vision</h2>
-        <p><strong>Mission:</strong> To provide high-quality, sustainable livestock farming practices that enhance the profitability and well-being of farmers, ensuring animal health and fostering long-term growth.</p>
-        <p><strong>Vision:</strong> To become a leading provider of livestock products (milk, meat, wool) through innovative and sustainable farming practices, enriching lives and contributing to community food security.</p>
+        <p><strong>Mission:</strong> To provide high-quality, sustainable livestock farming practices that enhance the profitability and well-being of farmers, ensuring animal health and fostering long-term growth.</p><br>
+        <p><strong>Vision:</strong> To become a leading provider of livestock products (milk, meat, wool) through innovative and sustainable farming practices, enriching lives and contributing to community food security.</p><br>
     </section>
 
     <section id="objectives">
         <h2>Project Objectives</h2>
         <ul>
-            <li>1. Establish a high-quality livestock breeding program for cattle, goats, pigs, and sheep.</li>
-            <li>2. Implement sustainable and cost-effective feeding practices to reduce operational costs.</li>
-            <li>3. Develop a robust health management plan that ensures regular veterinary care and disease prevention.</li>
-            <li>4. Expand the farm’s production capacity by increasing the herd size and diversifying livestock breeds.</li>
-            <li>5. Achieve a steady market demand for livestock products by building partnerships with local buyers and suppliers.</li>
+            <li>1. Establish a high-quality livestock breeding program for cattle, goats, pigs, and sheep.</li><br>
+            <li>2. Implement sustainable and cost-effective feeding practices to reduce operational costs.</li><br>
+            <li>3. Develop a robust health management plan that ensures regular veterinary care and disease prevention.</li><br>
+            <li>4. Expand the farm’s production capacity by increasing the herd size and diversifying livestock breeds.</li><br>
+            <li>5. Achieve a steady market demand for livestock products by building partnerships with local buyers and suppliers.</li><br>
         </ul>
-    </section>
-
-    <section id="livestock-types">
-        <h2>Types of Livestock Farming</h2>
-        <div class="card" id="cattle-farming">
-            <h3>Cattle Farming</h3>
-            <p>Raising cows for milk and beef.</p>
-            <button onclick="showDetails('cattle')">Learn More</button>
-            <div class="details" id="details-cattle">
-                <p>Space: 1-2 acres per cow</p>
-                <p>Feeding: Pasture and grains</p>
-                <p>Revenue: Milk and beef production</p>
-            </div>
-        </div>
-
-        <div class="card" id="goat-farming">
-            <h3>Goat Farming</h3>
-            <p>Goats for meat, milk, and fiber.</p>
-            <button onclick="showDetails('goat')">Learn More</button>
-            <div class="details" id="details-goat">
-                <p>Space: 0.5 to 1 acre for 10 goats</p>
-                <p>Feeding: Hay and supplemental grains</p>
-                <p>Revenue: Meat, milk, and fiber</p>
-            </div>
-        </div>
-
-        <div class="card" id="pig-farming">
-            <h3>Pig Farming</h3>
-            <p>Pigs raised for meat production (pork).</p>
-            <button onclick="showDetails('pig')">Learn More</button>
-            <div class="details" id="details-pig">
-                <p>Space: 100-150 sq. feet per pig</p>
-                <p>Feeding: Grains and vegetable scraps</p>
-                <p>Revenue: Pork production and piglets</p>
-            </div>
-        </div>
     </section>
 
     <section id="financials">
         <h2>Financial Tracker: Expenses and Income</h2>
         
-        <!-- Expenses and Income Table -->
+        <!-- Main Financial Table -->
         <table id="financial-table">
             <thead>
                 <tr>
@@ -117,20 +82,10 @@
                     <th>Labor Costs</th>
                     <th>Veterinary Costs</th>
                     <th>Revenue</th>
-                    <th>Profit</th>
-                    <th>Breeding Costs</th>
-                    <th>Market Sales</th>
-                    <th>Storage Costs</th>
-                    <th>Transportation Costs</th>
-                    <th>Insurance Costs</th>
-                    <th>Interest Payments</th>
-                    <th>Equipment Costs</th>
-                    <th>Miscellaneous</th>
-                    <th>Net Profit</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- 8 rows of data will be inserted here -->
+                <!-- 20 rows of data will be inserted here -->
                 <!-- Example Row -->
                 <tr>
                     <td>1</td>
@@ -143,15 +98,43 @@
                     <td>1000</td>
                     <td>500</td>
                     <td>0</td>
-                    <td>-5000</td>
-                    <td>0</td>
+                </tr>
+                <!-- Add other rows as necessary -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="additional-financials">
+        <h2>Additional Livestock Financial Tracker</h2>
+        <table id="additional-financials-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Revenue Source</th>
+                    <th>Feed Cost (Ksh)</th>
+                    <th>Labor Cost (Ksh)</th>
+                    <th>Health Cost (Ksh)</th>
+                    <th>Breeding Cost (Ksh)</th>
+                    <th>Market Sales (Ksh)</th>
+                    <th>Transport Costs (Ksh)</th>
+                    <th>Storage Costs (Ksh)</th>
+                    <th>Net Profit (Ksh)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 20 rows of data will be inserted here -->
+                <!-- Example Row -->
+                <tr>
+                    <td>2</td>
+                    <td>Milk Sales</td>
                     <td>2000</td>
-                    <td>3000</td>
+                    <td>1000</td>
                     <td>500</td>
-                    <td>700</td>
-                    <td>0</td>
-                    <td>3000</td>
+                    <td>300</td>
+                    <td>15000</td>
+                    <td>2000</td>
                     <td>500</td>
+                    <td>11000</td>
                 </tr>
                 <!-- Add other rows as necessary -->
             </tbody>
