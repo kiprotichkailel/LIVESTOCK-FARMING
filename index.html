@@ -3,30 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAILEL Livestock Farming Project</title>
+    <title>Livestock Farming Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>KAILEL Livestock Farming Project</h1>
-        <p>Manage your farm, track expenses and incomes, and increase profitability with expert-level strategies.</p><br>
+        <h1>Livestock Farming Project</h1>
+        <p>Manage and track your livestock farming activities with detailed financial records, objectives, and strategic planning.</p>
     </header>
 
-    <section id="financials">
-        <h2>Financial Tracker: Expenses and Income</h2>
-        <!-- Financial Tracker Table -->
-        <table id="financial-table">
+    <!-- Mission and Vision Section -->
+    <section id="mission-vision">
+        <h2>Mission & Vision</h2>
+        <table>
             <thead>
                 <tr>
-                    <th>Type</th><br>
-                    <th>Amount (Ksh)</th><br>
-                    <th>Date</th><br>
-                    <th>Category</th><br>
-                    <th>Actions</th><br>
+                    <th>Mission</th>
+                    <th>Vision</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>To provide high-quality, sustainable livestock farming practices that enhance the profitability and well-being of farmers, ensuring animal health and fostering long-term growth.</td>
+                    <td>To become a leading provider of livestock products (milk, meat, wool) through innovative and sustainable farming practices, enriching lives and contributing to community food security.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives">
+        <h2>Project Objectives</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Objective #</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Establish a high-quality livestock breeding program for cattle, goats, pigs, and sheep.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Implement sustainable and cost-effective feeding practices to reduce operational costs.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Develop a robust health management plan that ensures regular veterinary care and disease prevention.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Expand the farm’s production capacity by increasing the herd size and diversifying livestock breeds.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Achieve a steady market demand for livestock products by building partnerships with local buyers and suppliers.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Financial Tracker Section -->
+    <section id="financials">
+        <h2>Financial Tracker: Expenses and Income</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount (Ksh)</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody id="financial-table-body">
-                <!-- Financial entries will appear here -->
                 <tr>
                     <td>Expense</td>
                     <td>5000</td>
@@ -39,42 +93,29 @@
                     <td>15000</td>
                     <td>2024-12-05</td>
                     <td>Sales</td>
-                    <td><button onclick="deleteEntry(this)">Delete</button></td><br>
+                    <td><button onclick="deleteEntry(this)">Delete</button></td>
                 </tr>
             </tbody>
         </table>
 
-        <!-- Add New Entry Form -->
         <h3>Add New Entry</h3>
         <form id="financial-form">
-            <table>
-                <tr>
-                    <td><label for="type">Type (Expense/Income):</label></td>
-                    <td><input type="text" id="type" required></td>
-                </tr>
-                <tr>
-                    <td><label for="amount">Amount (Ksh):</label></td>
-                    <td><input type="number" id="amount" required></td>
-                </tr>
-                <tr>
-                    <td><label for="date">Date:</label></td>
-                    <td><input type="date" id="date" required></td>
-                </tr>
-                <tr>
-                    <td><label for="category">Category (e.g., Feed, Health, Sales):</label></td>
-                    <td><input type="text" id="category" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button type="submit">Add Entry</button></td>
-                </tr>
-            </table>
+            <label for="type">Type (Expense/Income):</label>
+            <input type="text" id="type" required>
+            <label for="amount">Amount (Ksh):</label>
+            <input type="number" id="amount" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="category">Category:</label>
+            <input type="text" id="category" required>
+            <button type="submit">Add Entry</button>
         </form>
     </section>
 
-    <!-- Detailed Livestock Financials Table -->
+    <!-- Detailed Livestock Financials Section -->
     <section id="detailed-financials">
         <h2>Detailed Livestock Financials</h2>
-        <table id="detailed-financials-table">
+        <table>
             <thead>
                 <tr>
                     <th>ID</th>
@@ -102,26 +143,14 @@
                     <td>500</td>
                     <td>0</td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Income</td>
-                    <td>12000</td>
-                    <td>2024-12-10</td>
-                    <td>Milk Sales</td>
-                    <td>Cattle</td>
-                    <td>1500</td>
-                    <td>2000</td>
-                    <td>1000</td>
-                    <td>15000</td>
-                </tr>
             </tbody>
         </table>
     </section>
 
     <!-- Additional Livestock Financial Tracker -->
     <section id="additional-financials">
-        <h2>Additional Livestock Financial Tracker</h2><br>
-        <table id="additional-financials-table">
+        <h2>Additional Livestock Financial Tracker</h2>
+        <table>
             <thead>
                 <tr>
                     <th>ID</th>
@@ -138,7 +167,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
+                    <td>2</td>
                     <td>Milk Sales</td>
                     <td>2000</td>
                     <td>1000</td>
@@ -149,26 +178,48 @@
                     <td>500</td>
                     <td>11000</td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Meat Sales</td>
-                    <td>2500</td>
-                    <td>1500</td>
-                    <td>400</td>
-                    <td>500</td>
-                    <td>20000</td>
-                    <td>3000</td>
-                    <td>600</td>
-                    <td>13500</td>
-                </tr>
             </tbody>
         </table>
     </section>
 
     <footer>
-        <p>&copy; 2024 Expert Livestock Farming Project</p>
+        <p>&copy; 2024 Livestock Farming Project by KAILEL</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Function to handle adding financial entries
+        document.getElementById('financial-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Retrieve form values
+            const type = document.getElementById('type').value;
+            const amount = document.getElementById('amount').value;
+            const date = document.getElementById('date').value;
+            const category = document.getElementById('category').value;
+
+            // Add a new row to the financial tracker table
+            const tableBody = document.getElementById('financial-table-body');
+            const newRow = document.createElement('tr');
+
+            newRow.innerHTML = `
+                <td>${type}</td>
+                <td>${amount}</td>
+                <td>${date}</td>
+                <td>${category}</td>
+                <td><button onclick="deleteEntry(this)">Delete</button></td>
+            `;
+
+            tableBody.appendChild(newRow);
+
+            // Reset form inputs
+            document.getElementById('financial-form').reset();
+        });
+
+        // Function to delete a table entry
+        function deleteEntry(button) {
+            const row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
 </body>
 </html>
