@@ -8,7 +8,7 @@ document.getElementById('financial-form').addEventListener('submit', function(ev
     var date = document.getElementById('date').value;
     var category = document.getElementById('category').value;
 
-    // Create a new row in the table
+    // Create a new row in the financial table
     var tableBody = document.getElementById('financial-table-body');
     var newRow = document.createElement('tr');
 
@@ -28,8 +28,8 @@ document.getElementById('financial-form').addEventListener('submit', function(ev
     document.getElementById('financial-form').reset();
 });
 
-// Function to delete an entry from the table
+// Function to delete a financial entry
 function deleteEntry(button) {
-    var row = button.parentElement.parentElement;
-    row.remove();
+    var row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row);
 }
